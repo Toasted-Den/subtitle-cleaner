@@ -2,6 +2,8 @@
 
 The SRT Subtitle Cleaner is a Python script that processes SubRip Subtitle (SRT) files. It removes all capital letters, converts them to lowercase, and removes all periods from the subtitle text. The processed output is saved in a new SRT file with the same content but in lowercase and without periods.
 
+This script was specifcally made to fit my subtitle editing style, as seen in my [videos](https://youtube.com/@ToastedDen).
+
 ## Getting Started
 
 1. **Download the Script**: Download the `sub.py` script from the repository.
