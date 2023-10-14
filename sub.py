@@ -21,7 +21,7 @@ def process_srt_file(input_file):
                 if line.isdigit() or not line:  # Check if the line is empty or a sequence number
                     f_output.write(line + '\n')  # Write empty lines or sequence numbers as-is
                 else:
-                    line = line.replace('.', '').replace(',', '').lower()  # Process the subtitle text line
+                    line = line.replace(',', '').replace('.', '').replace('!', '').lower()  # Process the subtitle text line
                     f_output.write(line + '\n')  # Write the processed subtitle text with a newline
 
 def process_all_srt_files():
@@ -43,13 +43,13 @@ def process_all_srt_files():
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python sub.py input.srt | all")  # Print usage instructions if the script is not used correctly
+        print("Usage: python sub.py input.srt | -all")  # Print usage instructions if the script is not used correctly
     else:
         input_file = sys.argv[1]
-        if input_file.lower() == "all":
+        if input_file.lower() == "-all":
             process_all_srt_files()  # Process all .srt files in the current directory and its subdirectories
         elif not input_file.lower().endswith('.srt'):
-            print("Please provide an .srt file or use 'all' to process all files.")  # Print a message for invalid input
+            print("Please provide an .srt file or use '-all' to process all files.")  # Print a message for invalid input
         else:
             process_srt_file(input_file)  # Process the specified .srt file
             print("Processing complete.")  # Print a message to indicate processing is finished
