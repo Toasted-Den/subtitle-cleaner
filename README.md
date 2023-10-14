@@ -1,6 +1,6 @@
 # SRT Subtitle Cleaner
 
-The SRT Subtitle Cleaner is a Python script that processes SubRip Subtitle (SRT) files. It removes all capital letters, converts them to lowercase, and removes all periods from the subtitle text. The processed output is saved in a new SRT file with the same content but in lowercase and without periods.
+The SRT Subtitle Cleaner is a Python script that processes SubRip Subtitle (SRT) files. It removes all capital letters, converts them to lowercase, and removes all periods, commas, and exclamation marks from the subtitle text. The processed output is saved in a new SRT file with the same content but in lowercase and without these punctuation marks.
 
 This script was specifically made to fit my subtitle editing style, as seen in my [videos](https://youtube.com/@ToastedDen).
 
@@ -14,10 +14,9 @@ This script was specifically made to fit my subtitle editing style, as seen in m
 
 You can run the script using the following command:
 
-
 - `[input.srt]`: Replace this with the name of the specific SRT file you want to process. The processed output will be saved as `[input]_processed.srt` in the same directory.
 
-- `all`: Use this argument to process all SRT files in the current directory and its subdirectories. The processed files will be saved in the same locations with the suffix `_processed.srt`.
+- `-all`: Use this argument to process all SRT files in the current directory and its subdirectories. The processed files will be saved in the same locations with the suffix `_processed.srt`.
 
 **Optional - Add to PATH**
 
@@ -46,8 +45,10 @@ The processed output will be saved as `input_processed.srt` in the same director
 Processed files will be saved in their respective locations with the suffix `_processed.srt`.
 
 ## If you have any questions...
-Feel free to add me on Discord and I can try to help you out.
+
+Feel free to add me on Discord, and I can try to help you out.
 Discord: toastedden OR Toasted Den#0001
 
-## Also check out my [webisite](https://toastedden.com/)!
-*Paint me yellow and call me fucking sunshine, you've made it to the bottom!*
+## Also check out my [website](https://toastedden.com/)!
+
+*Paint me yellow and call me sunshine; you've made it to the bottom!*
