@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: KGRedHands, 'KG Red Hands';
+        font-size: 475.22px;
+      }
+
+      .cls-2 {
+        fill: #fec06d;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g id="Background">
+    <circle class="cls-2" cx="512" cy="512" r="512"/>
+  </g>
+  <g id="Text">
+    <text class="cls-1" transform="translate(85.63 678.55)"><tspan x="0" y="0">S</tspan><tspan class="cls-3" x="277.05" y="0">R</tspan><tspan x="584.97" y="0">T</tspan></text>
+  </g>
+</svg>

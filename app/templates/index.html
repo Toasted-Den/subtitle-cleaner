@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Subtitle Toastifier</title>
+    <link rel="icon" type="image/svg" href="../static/assets/icon.svg">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Toastify Your Subtitle Files</h1>
+        
+        <form id="uploadForm" enctype="multipart/form-data" method="post" action="/upload">
+            <div class="upload-container" id="dropZone">
+                <input type="file" id="fileInput" name="files[]" multiple accept=".srt" />
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag files here or click to browse</p>
+                <span class="file-type">Accepts .srt files</span>
+            </div>
+
+            <div class="file-status">
+                <span id="fileCount">No files selected</span>
+            </div>
+
+            <ul id="fileList" class="file-list"></ul>
+
+            <div class="button-group">
+                <button type="submit" id="uploadButton" class="btn btn-primary" disabled>
+                    <i class="fas fa-upload"></i> Upload & Process
+                </button>
+                <button type="button" id="clearAllButton" class="btn btn-secondary">
+                    <i class="fas fa-trash"></i> Clear All
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Version 1.0.0 - <a href="https://github.com/toastedden/subtitle-toastifier" target="_blank" title="Source">Source</a></p>
+    </footer>
+
+    <script src="../static/uploader.js"></script>
+</body>
+</html>
